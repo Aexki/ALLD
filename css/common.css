@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Medium.eot');
+    src: url('../fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Medium.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueRegular.eot');
+    src: url('../fonts/HelveticaNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueRegular.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueRegular.woff') format('woff'),
+        url('../fonts/HelveticaNeueRegular.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueRegular.svg#HelveticaNeueRegular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Bold.eot');
+    src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    outline: none;
+}
+
+.invert, .invert .title h2, .invert .title h1, .invert p {
+    color: #fff !important;
+}
+
+.section-big-image.bg {
+    padding-bottom: 0% !important;
+}
+
+.bg-size-cover {
+    background-size: cover;
+}
+
+.section-big-image .bg.bottom {
+    background-position: center bottom;
+}
+
+.section-big-image .bg.top {
+    background-position: center top;
+}
+
+.section-big-image .bg.top-left {
+    background-position: left top;
+}
+
+.section-big-image .bg.top-right {
+    background-position: right top;
+}
+
+.section .content {
+    padding: 10em 0;
+}
+
+.section.section-big-image .content {
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.section.section-big-image .content.top {
+    top: 0;
+}
+
+.section.section-big-image .content.bottom {
+    bottom: 0;
+}
+
+.section.section-big-image .content.middle {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* Buttons */
+.btn-green {
+    background: #94CA51;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.6em 2em;
+    border: 2px solid transparent;
+}
+
+.btn-green:hover {
+    background: #fff;
+    color: #020D3A;
+    border-color: #94CA51;
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-gray {
+    background: #E5E9F2;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #020D3A;
+    padding: 0.6em 2em;
+}
+
+.btn-gray:hover {
+    background: #020D3A;
+    color: #fff;
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-blue {
+    background: #018EFF;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.6em 2em;
+}
+
+.btn-blue:hover {
+    background: #020D3A;
+    color: #fff;
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-lg {
+    padding: 0.9em 2em;
+    font-size: 1em;
+}
+
+.tabs {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.tabs .text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tabs .row {
+    margin: 50px 0;
+}
+
+.tabs .left {
+    text-align: left;
+}
+
+.tabs .right {
+    text-align: right;
+}
+
+.tabs hr {
+    width: 130px;
+    height: 8px;
+    background-color: rgb(2, 91, 224);
+}
+
+
+.tabs .hr-left {
+    float: right;
+
+}
+
+.tabs .hr-right {
+    float: left;
+}
+
+.tabs img {
+    width: 400px;
+    height: 100%;
+}
+
+#landing-image {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100vh - 100px);
+    text-align: center;
+}
+
+.landing-page h1 {
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 800px;
+}
+
+.landing-page button {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.gray-bg {
+    text-align: center;
+}
+
+.gray-bg img {
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.gray-bg img:hover {
+    filter: grayscale(0%);
+    transform: translateY(-10px);
+}
+
+.technologies img {
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.technologies img:hover {
+    filter: grayscale(0%);
+    transform: translateY(-10px);
+}
+
+
+.pics .card {
+    transition: .3s;
+    height: 410px;
+    width: 360px;
+    margin: 0 auto;
+}
+
+/* .card-img-top {
+    transition: .3s;
+    overflow: hidden;
+    height: 70%;
+    border: 2px solid black
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    z-index: 5;
+} */
+
+.pics .card:hover {
+    box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.75);
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
