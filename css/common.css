@@ -211,27 +211,55 @@ a {
 }
 
 
-#landing-image {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    height: calc(100vh - 100px);
+
+.landing-page {
     text-align: center;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
 }
 
-.landing-page h1 {
+.landing-page video {
     position: absolute;
-    top: 40vh;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 800px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
 }
 
-.landing-page button {
+/* .landing-page h1 {
     position: absolute;
     top: 50vh;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    width: 800px;
+    color: White;
+} */
+
+.landing-page button {
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid white;
+    background: transparent;
+}
+
+.landing-page button:hover {
+    background: transparent;
+    box-shadow: -1px 2px 25px 3px white;
+    -webkit-box-shadow: -1px 2px 25px 3px white;
+    -moz-box-shadow: -1px 2px 25px 3px white;
+}
+
+.titleText {
+    position: absolute;
+    top: 40vh;
+    width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 #dropdownMenuButton1, #dropdownMenuButton1:focus, #dropdownMenuButton1:hover {

@@ -21,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </head>
 
-<body style="position: relative; top: 130px;">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-xl">
@@ -65,6 +65,13 @@
         </nav>
     </header>
 
+    <div class="landing-page">
+        <!-- <img src="images/landing-backgorund.gif" id='landing-image'> -->
+        <video src="images/backgroundSpace.mp4" loop autoplay></video>
+        <!-- <h1>Explore ALL Dimensions Of Data</h1> -->
+        <button onClick="scrollToElement('tabs')" class="btn btn-blue rounded">Learn More</button>
+    </div>
+    <img src="images/title.png" class="titleText">
     <div class="page-content">
         <!-- <div class="hero">
             <div class="swiper-container" id="hero-slider">
@@ -116,10 +123,39 @@
             </div>
         </div> -->
 
-        <div class="landing-page">
-            <img src="images/images-mudrika/bubbles.gif" id='landing-image'>
-            <h1>Explore ALL Dimensions Of Data</h1>
-            <button onClick="scrollToElement('services')" class="btn btn-blue rounded">Learn More</button>
+
+
+
+        <div class="container tabs">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/our-vision.png" class="section-image">
+                </div>
+                <div class="col-md-6 left">
+                    <div class="text">
+                        <h3><b>OUR VISION</b></h3>
+                        <hr class="hr-right"><br><br>
+                        <h6><b>Help every business to achieve more</b></h6>
+                        <p>Empower every business to service humanity with our services and products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 right">
+                    <div class="text">
+                        <h3><b>OUR MISSION</b></h3>
+                        <hr class="hr-left"><br><br>
+                        <h6><b>Connect every human being thourgh our services and products</b></h6>
+                        <p>We can server living being better if we can explore all dimensions of collected data.
+                            Through our services and products we want to empower business to explore their data
+                            better.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/our-mission.png" class="section-image">
+                </div>
+            </div>
+
         </div>
 
         <div class="services" style="background-image: url('images/service-background.jpeg');">
@@ -155,38 +191,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container tabs">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="./images/our-vision.png" class="section-image">
-                </div>
-                <div class="col-md-6 left">
-                    <div class="text">
-                        <h3><b>OUR VISION</b></h3>
-                        <hr class="hr-right"><br><br>
-                        <h6><b>Help every business to achieve more</b></h6>
-                        <p>Empower every business to service humanity with our services and products.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 right">
-                    <div class="text">
-                        <h3><b>OUR MISSION</b></h3>
-                        <hr class="hr-left"><br><br>
-                        <h6><b>Connect every human being thourgh our services and products</b></h6>
-                        <p>We can server living being better if we can explore all dimensions of collected data.
-                            Through our services and products we want to empower business to explore their data
-                            better.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="./images/our-mission.png" class="section-image">
-                </div>
-            </div>
-
         </div>
 
         <!-- <section class="big">
