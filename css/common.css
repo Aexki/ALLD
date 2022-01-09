@@ -219,12 +219,13 @@ a {
     z-index: -1;
 }
 
-.landing-page video {
+.landing-page img {
     position: absolute;
     height: 100vh;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
     z-index: 0;
 }
 
@@ -256,7 +257,7 @@ a {
 .titleText {
     position: absolute;
     top: 40vh;
-    width: 600px;
+    width: 700px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
