@@ -5,3 +5,9 @@ function goDown(x) {
         behavior: 'smooth'
     });
 }
+
+function scrollToElement(e) {
+    $('html,body').animate({
+        scrollTop: $("." + e).offset().top - 50
+    });
+}

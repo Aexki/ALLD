@@ -169,7 +169,7 @@ a {
 }
 
 .tabs {
-    margin-top: 100px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -180,7 +180,7 @@ a {
 }
 
 .tabs .row {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .tabs .left {
@@ -192,7 +192,7 @@ a {
 }
 
 .tabs hr {
-    width: 130px;
+    width: 100px;
     height: 8px;
     background-color: rgb(2, 91, 224);
 }
@@ -200,7 +200,6 @@ a {
 
 .tabs .hr-left {
     float: right;
-
 }
 
 .tabs .hr-right {
@@ -208,9 +207,9 @@ a {
 }
 
 .tabs img {
-    width: 400px;
-    height: 100%;
+    width: 280px;
 }
+
 
 #landing-image {
     position: relative;
@@ -235,13 +234,70 @@ a {
     transform: translateX(-50%) translateY(-50%);
 }
 
+#dropdownMenuButton1, #dropdownMenuButton1:focus, #dropdownMenuButton1:hover {
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.dropdown-menu {
+    min-width: 235px !important;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 5px 0;
+}
+
+.services {
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services .row {
+    margin-top: 50px;
+}
+
+.services .box {
+    width: 400px !important;
+    height: 410px;
+    padding: 50px 10px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    background: rgb(31, 30, 30);
+    transition: .2s;
+    color: white;
+}
+
+.services .box:hover {
+    cursor: pointer;
+    border-color: white;
+    box-shadow: -1px 2px 25px 3px white;
+    -webkit-box-shadow: -1px 2px 25px 3px white;
+    -moz-box-shadow: -1px 2px 25px 3px white;
+}
+
+.services .box:hover h3 {
+    color: #208ff7;
+}
+
+.box-right {
+    float: right;
+}
+
 .gray-bg {
     text-align: center;
+    padding-top: 100px;
+    min-height: 100vh;
 }
 
 .gray-bg img {
     filter: grayscale(100%);
     transition: .5s;
+    margin: 20px 0;
 }
 
 .gray-bg img:hover {
@@ -267,21 +323,6 @@ a {
     margin: 0 auto;
 }
 
-/* .card-img-top {
-    transition: .3s;
-    overflow: hidden;
-    height: 70%;
-    border: 2px solid black
-}
-
-.card-img-top:hover {
-    transform: scale(1.1);
-}
-
-.card-body {
-    z-index: 5;
-} */
-
 .pics .card:hover {
     box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.75);
@@ -303,4 +344,51 @@ html {
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
+}
+
+footer {
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer li a:hover {
+    cursor: pointer;
+    color: #208ff7;
+}
+
+.footer-spacer {
+    height: 40px;
+}
+
+footer hr {
+    background-color: #208ff7;
+    width: 100px;
+    float: left;
+    height: 2px;
+    border: 2px solid #208ff7;
+}
+
+.copyright {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    height: 60px;
+    margin: auto 0;
+}
+
+.copyright p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
