@@ -14,12 +14,49 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/plugin.css">
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-    <title>ALL DATA problems</title>
+    <title>ALLD solves ALL DATA problems</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container1 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .container2 {
+            border-radius: 5px;
+            background-color: white;
+            padding: 137px;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +73,7 @@
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"> HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/"> HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <div class="dropdown nav-item">
                             <button class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -48,41 +85,71 @@
                                 <li><a class="dropdown-item" href="cloudServices.html">CLOUD SERVICES</a></li>
                             </ul>
                         </div>
-                        <!-- <li class="nav-item">
-                                <a class="nav-link" href="services.html"> Services </a>
-                            </li> -->
-                        <!-- <li class="nav-item">
-                                <a class="nav-link" href="#"> CAREERS </a>
-                            </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> ABOUT US </a>
+                            <a class="nav-link" href="aboutUs.html"> ABOUT US </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="contactus.html"> CONTACT US </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> CONTACT US </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container-fluid"
-        style="background-image: url('images/map.jpg'); background-size: 100% 100%; opacity: 0.8; height: 550px;">
-        <h1 style="color: white; padding: 60px;"><b>Let's make something awsome together!</b></h1>
-        <h3 style="color: white; padding-left: 60px; padding-right: 60px;;">Drop us a line, or give us a heads up if you
-            are interested in visiting us.</h3>
-        <button type="button" onClick="goDown(700)"
-            style=" color: white; background-color: rgb(211, 55, 55); margin-top: 60px; margin-left: 60px; padding: 10px;  border-radius: 6px; border:none;">Get
-            in touch</button>
-    </div>
-    <br>
-    <br>
-    <div class="container">
-        <div class="row justify-content-md-center mb-3">
-            <div class="col-sm-12 text-center">
-                <h4>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</h4>
+    <section class="services-landing-text"
+        style="position: relative; top: 100px; background-image: url('images/new.jpg.crdownload'); background-size: 100% 100%; opacity: 1; height: 75vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" style="position: relative; top: 30px">
+                    <p><a href="/">Home</a> > Contact Us</p><br>
+                    <h1><b>Contact Us</b></h1><br>
+                    <h5>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</h5><br><br>
+                    <button onClick="goDown(600)"><b>Learn&nbsp;
+                            More</b></button>
+                </div>
             </div>
         </div>
+    </section>
 
+    <div class="container contact">
+        <h2 style="text-align: center;"><b>GET IN TOUCH</b></h2>
+        <hr style="width: 130px; height: 7px;">
+        <div class="row contact-content">
+            <div class="col-md-6">
+                <div class="container1">
+                    <form action="/action_page.php">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your name.." required>
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="eid" placeholder="Your email.." required>
+
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="Your contact no.." required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:150px"
+                            required></textarea>
+
+                        <input type="submit" value="SUBMIT" class="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container2">
+                    <h5><b>USA</b></h5>
+                    <h5>1621 114th Ave SE Suite 213<br>Bellevue, WA 98004</h5>
+                    <h5><b>Email</b> : team@wallero.com</h5>
+                    <h5><b>Contact</b> : +1 425-440-2828</h5>
+                    <br>
+                    <br>
+                    <h5><b>INDIA</b></h5>
+                    <h5>Bhubaneswar, Odisha</h5>
+                    <h5><b>Email</b> : team@wallero.com</h5>
+                    <h5><b>Contact</b> : +1 425-440-2828</h5>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer style="background-image: url('images/service-background.jpeg');">
@@ -91,29 +158,39 @@
                 <div class="col-md-3">
                     <div class="footer-spacer"></div>
                     <div class="footer-spacer"></div>
+                    <div class="footer-spacer"></div>
                     <img src="images/logo/footer-logo.png" class="img-fluid"><br><br><br>
                     <h5>ALLD Technology<br>India Private Limited</h5><br>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4 office">
                     <div class="footer-spacer"></div>
-                    <h5><b>INDIA OFFICE</b></h5>
+                    <h5><b>OFFICE</b></h5>
                     <hr class="hr-footer"><br><br>
-                    <h6>Insert Office Address</h6>
+                    <h6><b><button onclick="changeOffice('USA')" id='USA' class="active"><u>USA
+                                    OFFICE</u></button>&nbsp; |
+                            &nbsp;<button onclick="changeOffice('INDIA')" id='INDIA'><u>INDIA OFFICE</u></button></b>
+                    </h6><br>
+                    <h6><img src="images/logo/location.png" width="30"> &nbsp;<span id="office-address">518 144th Ave
+                            NE Redmond, WA 98052</span></h6>
+                    <br>
+                    <h6><img src="images/logo/email.png" width="30">&nbsp;&nbsp;team@alldtechnology.com</h6>
+                    <br>
+                    <h6><img src="images/logo/phone-call.png" width="30">&nbsp;&nbsp;<span id="office-phone">+1
+                            989-234-8892</span></h6>
                 </div>
                 <div class="col-md-3">
                     <div class="footer-spacer"></div>
                     <h5><b>QUICK LINKS</b></h5>
                     <hr class="hr-footer"><br><br>
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="">DATA RELATED SERVICES</a></li>
-                        <li><a href="">CLOUD SERVICES</a></li>
-                        <li><a href="">CAREERS</a></li>
-                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="dataServices.html">DATA RELATED SERVICES</a></li>
+                        <li><a href="cloudServices.html">CLOUD SERVICES</a></li>
+                        <li><a href="aboutUs.html">ABOUT US</a></li>
                         <li><a href="">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="footer-spacer"></div>
                     <h5><b>STAY CONNECTED</b></h5>
                     <hr class="hr-footer"><br><br>
