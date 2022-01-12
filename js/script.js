@@ -1,11 +1,10 @@
-function goDown(x) {
-    window.scroll({
-        top: x,
-        behavior: 'smooth'
-    });
-}
-
 function scrollToElement(e) {
+    if (e == 'contact') {
+        $('html,body').animate({
+            scrollTop: $("." + e).offset().top - 120
+        });
+        return;
+    }
     $('html,body').animate({
         scrollTop: $("." + e).offset().top - 50
     });
@@ -23,7 +22,7 @@ var currentOffice = 'USA';
 
 function changeOffice(place) {
     document.getElementById('office-address').innerHTML = officeInfo[place]['office-address'];
-    document.getElementById('office-phone').innerHTML = officeInfo[place]['office-phone'];
+    // document.getElementById('office-phone').innerHTML = officeInfo[place]['office-phone'];
     document.getElementById(place).classList.add('active');
     document.getElementById(currentOffice).classList.remove('active');
     currentOffice = place;

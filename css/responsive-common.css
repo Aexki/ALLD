@@ -1,0 +1,209 @@
+@media(max-width: 1160px) {
+    .pics .card {
+        width: 300px;
+        height: 510px;
+    }
+
+    .data-text {
+        height: 100vh;
+    }
+
+    .aboutus-text {
+        height: 100vh;
+    }
+}
+
+@media(max-width: 950px) {
+    .pics .card img {
+        height: 50%;
+    }
+
+    .pics .card {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+
+@media(max-width: 850px) {
+    .services .box {
+        width: 350px !important;
+        margin: 20px auto;
+    }
+}
+
+@media(max-width: 770px) {
+    .landing-page button {
+        top: 70vh
+    }
+
+    .titleText {
+        width: 500px;
+        top: 40vh;
+    }
+
+    .pics .card {
+        width: 350px;
+        margin: 10px auto;
+    }
+
+    .team .card {
+        margin: 20px auto;
+    }
+
+    .contact .submit {
+        background-image: linear-gradient(to bottom right, rgb(58, 58, 250), rgb(0, 174, 255));
+        margin: 30px 0;
+    }
+
+    .contact-address-text {
+        margin: 50px 0;
+    }
+}
+
+@media(max-width: 490px) {
+    .landing-page {
+        height: 90vh;
+    }
+
+    .landing-page img {
+        height: 90vh;
+    }
+
+    .landing-page button {
+        top: 60vh
+    }
+
+    .titleText {
+        width: 300px;
+        top: 35vh;
+    }
+
+    .tabs {
+        text-align: center;
+    }
+
+    .tabs img {
+        width: 180px;
+        margin: 30px 0;
+    }
+
+    .tabs hr {
+        margin-bottom: -15px;
+    }
+
+    .tabs .hr-left {
+        float: none;
+    }
+
+    .tabs .hr-right {
+        float: none;
+    }
+
+    .tabs .left {
+        text-align: center;
+    }
+
+    .tabs .right {
+        text-align: center;
+    }
+
+    .services {
+        text-align: center;
+    }
+
+    .services .box {
+        width: 80% !important;
+        height: auto !important;
+        padding: 30px 0 10px 0;
+        margin: 5px auto;
+    }
+
+    .box-right {
+        float: none;
+    }
+
+    .box-left {
+        float: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer hr {
+        float: none;
+    }
+
+    footer ul {
+        margin-top: -20px
+    }
+
+    /* Data related services */
+
+    .services-landing-text {
+        padding-top: 60px;
+        height: 80vh;
+    }
+
+    .services-landing-text h1 {
+        font-size: 40px;
+    }
+
+    .services-landing-text h5 {
+        font-size: 20px;
+    }
+
+    .services-landing-text button {
+        width: 150px;
+        height: 45px;
+        border: none;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom right, rgb(58, 58, 250), rgb(0, 174, 255));
+        color: white;
+        font-size: 16px;
+    }
+
+    .data-text{
+        height: 90vh;
+    }
+
+    .aboutus-text{
+        height: 90vh;
+    }
+
+    .big {
+        top: 50px;
+    }
+
+    .pics .card {
+        transition: .3s;
+        height: auto;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    /* Cloud services */
+    .cloud-text {
+        padding-top: 100px;
+    }
+
+    /* About us */
+    .team .card {
+        margin: 20px auto;
+    }
+
+    /* Contact us */
+    .contact-text {
+        padding-top: 100px;
+    }
+
+    .contact .submit {
+        background-image: linear-gradient(to bottom right, rgb(58, 58, 250), rgb(0, 174, 255));
+        margin: 30px 0;
+    }
+
+    .contact-address-text {
+        margin: 50px 0;
+    }
+}

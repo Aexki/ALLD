@@ -211,15 +211,13 @@ hr {
 }
 
 .big {
-    position: relative;
-    top: 200px;
+    margin-top: 100px;
     text-align: center;
 }
 
 .big .technologies {
-    position: relative;
-    top: 100px;
-    height: 100vh;
+    margin-top: 100px;
+    height: auto;
 }
 
 .landing-page {
@@ -230,11 +228,8 @@ hr {
 }
 
 .landing-page img {
-    position: absolute;
+    /* position: absolute; */
     height: 100vh;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     width: 80%;
     z-index: 0;
 }
@@ -309,6 +304,7 @@ hr {
     background: rgb(31, 30, 30);
     transition: .2s;
     color: white;
+    margin: 0 auto;
 }
 
 .services .box:hover {
@@ -322,6 +318,8 @@ hr {
 .services-landing-text {
     text-align: left;
     color: white;
+    padding-top: 150px;
+    height: 85vh;
 }
 
 .services-landing-text h1 {
@@ -350,14 +348,6 @@ hr {
     opacity: 0.95;
     outline: none;
     border: none;
-}
-
-.box-right {
-    float: right;
-}
-
-.box-left {
-    float: left;
 }
 
 .gray-bg {
@@ -394,7 +384,7 @@ hr {
 
 .pics .card {
     transition: .3s;
-    height: 410px;
+    height: 450px;
     width: 360px;
     margin: 0 auto;
 }
@@ -463,19 +453,22 @@ hr {
 }
 
 .contact {
-    position: relative;
-    top: 200px;
-    height: calc(100vh + 300px);
+    margin-top: 150px;
+    min-height: 100vh;
+}
+
+.contact .submit {
+    background-image: linear-gradient(to bottom right, rgb(58, 58, 250), rgb(0, 174, 255));
+    /* margin: 30px 0; */
 }
 
 .contact-content {
     margin-top: 50px;
 }
 
-.contact .submit {
-    background-image: linear-gradient(to bottom right, rgb(58, 58, 250), rgb(0, 174, 255));
+.contact-address-text{
+    margin: auto 0;
 }
-
 /* html {
     overflow: scroll;
     overflow-x: hidden;

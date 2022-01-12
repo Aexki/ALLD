@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="css/plugin.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive-common.css">
     <title>ALLD solves ALL DATA problems</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="hhttps://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -26,7 +26,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-xl">
-                <a class="navbar-brand" href=""><img src="images/logo.png" class=" img-fluid"></a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" class=" img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="line"></span>
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href=""> HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html"> HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <div class="dropdown nav-item">
                             <button class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -61,9 +61,7 @@
     </header>
 
     <div class="landing-page">
-        <img src="images/backgroundSpace.gif" id='landing-video'>
-        <!-- <video src="images/backgroundSpace.mp4" preload="auto" loop="true" autoplay="true" id="landing-video"></video> -->
-        <!-- <h1>Explore ALL Dimensions Of Data</h1> -->
+        <img src="images/backgroundSpace.gif">
         <button onClick="scrollToElement('tabs')" class="btn btn-blue rounded">Learn More</button>
     </div>
     <img src="images/title.png" class="titleText">
@@ -108,7 +106,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <a href="dataServices.html">
-                            <div class="box box-right">
+                            <div class="box">
                                 <img src="images/professional-services.svg"><br><br><br>
                                 <h3><b>Data Related Services
                                     </b></h3><br>
@@ -123,7 +121,7 @@
 
                     <div class="col-md-6">
                         <a href="cloudServices.html">
-                            <div class="box box-left">
+                            <div class="box">
                                 <img src="images/our-cloud-offerings.svg"><br><br><br>
                                 <h3><b>Cloud Applications
                                     </b></h3><br>
@@ -373,14 +371,14 @@
     <footer style="background-image: url('images/service-background.jpeg');">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="footer-spacer"></div>
                     <div class="footer-spacer"></div>
                     <div class="footer-spacer"></div>
                     <img src="images/logo/footer-logo.png" class="img-fluid"><br><br><br>
-                    <h5>ALLD Technology<br>India Private Limited</h5><br>
+                    <h5>ALLD Technology Company</h5><br>
                 </div>
-                <div class="col-md-4 office">
+                <div class="col-md-6 office col-lg-4">
                     <div class="footer-spacer"></div>
                     <h5><b>OFFICE</b></h5>
                     <hr class="hr-footer"><br><br>
@@ -388,20 +386,20 @@
                                     OFFICE</u></button>&nbsp; |
                             &nbsp;<button onclick="changeOffice('INDIA')" id='INDIA'><u>INDIA OFFICE</u></button></b>
                     </h6><br>
-                    <h6><img src="images/logo/location.png" width="30"> &nbsp;<span id="office-address">518 144th Ave
+                    <h6><img src="images/logo/location.png" width="30"> &nbsp;<span id="office-address">7518 144th Ave
                             NE Redmond, WA 98052</span></h6>
                     <br>
-                    <h6><img src="images/logo/email.png" width="30">&nbsp;&nbsp;team@alldtechnology.com</h6>
+                    <h6><img src="images/logo/email.png" width="30">&nbsp;&nbsp;admin@alldtechnology.com</h6>
                     <br>
-                    <h6><img src="images/logo/phone-call.png" width="30">&nbsp;&nbsp;<span id="office-phone">+1
-                            989-234-8892</span></h6>
+                    <!--<h6><img src="images/logo/phone-call.png" width="30">&nbsp;&nbsp;<span id="office-phone">+1
+                            989-234-8892</span></h6>-->
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="footer-spacer"></div>
                     <h5><b>QUICK LINKS</b></h5>
                     <hr class="hr-footer"><br><br>
                     <ul>
-                        <li><a href="">HOME</a></li>
+                        <li><a href="/">HOME</a></li>
                         <li><a href="dataServices.html">DATA RELATED SERVICES</a></li>
                         <li><a href="cloudServices.html">CLOUD SERVICES</a></li>
                         <!-- <li><a href="/">CAREERS</a></li> -->
@@ -409,7 +407,7 @@
                         <li><a href="contactus.html">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-6 col-lg-2">
                     <div class="footer-spacer"></div>
                     <h5><b>STAY CONNECTED</b></h5>
                     <hr class="hr-footer"><br><br>

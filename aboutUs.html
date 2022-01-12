@@ -16,15 +16,17 @@
     <link rel="stylesheet" href="css/plugin.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive-common.css">
+    <title>ALLD solves ALL DATA problems</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-    <title>ALLD solves ALL DATA problems</title>
+</head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-xl">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class=" img-fluid"></a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" class=" img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="line"></span>
@@ -34,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"> HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/"> HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <div class="dropdown nav-item">
                             <button class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -57,15 +59,17 @@
             </div>
         </nav>
     </header>
-    <section class="services-landing-text"
-        style="position: relative; top: 100px; background-image: url('images/new.jpg.crdownload'); background-size: 100% 100%; opacity: 1; height: 75vh;">
+    <section class="services-landing-text aboutus-text"
+        style="background-image: url('images/new.jpg'); background-size: 100% 100%; opacity: 1;">
         <div class="container">
             <div class="row">
                 <div class="col-md-8" style="position: relative; top: 30px">
                     <p><a href="/">Home</a> > About Us</p><br>
                     <h1><b>About Us</b></h1><br>
-                    <h5>To be written.</h5><br><br>
-                    <button onClick="goDown(600)"><b>Learn&nbsp;
+                    <h5>At ALLD, we are experts in big data field. We understand the importance of data and its
+                        technologies. Every one of us are customer centric and our goal is to delight customers.</h5>
+                    <br><br>
+                    <button onClick="scrollToElement('big')"><b>Learn&nbsp;
                             More</b></button>
                 </div>
             </div>
@@ -77,9 +81,9 @@
             <h3><b>OUR TEAM</b></h3>
             <hr style="width: 130px; height: 7px;">
             <div class="row team">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card">
-                        <img src="images/client-img.png" alt="" width="200">
+                        <img src="images/bala1.png" alt="" width="200" height="200">
                         <div class="details">
                             <h5><b>Balakrishna Mishro</b></h5>
                             <h5>President and CEO</h5>
@@ -95,7 +99,18 @@
                             applications and products.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="images/tapan_updated.png" alt="" width="200" height="200">
+                        <div class="details">
+                            <h5><b>Tapan Acharya</b></h5>
+                            <h5>CTO</h5>
+                        </div>
+                        <p>Tapan Acharya was in Microsoft for 13 years and he is an expert in cloud and bigdata
+                            technologies.</p>
+                    </div>
+                </div>
+                <!--<div class="col-md-4">
                     <div class="card">
                         <img src="images/client-img.png" alt="" width="200">
                         <div class="details">
@@ -106,19 +121,7 @@
                             reiciendis enim nobis! Aspernatur placeat tempore in animi, aut incidunt laborum esse
                             temporibus aliquid quo enim deleniti, atque ab?</p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/client-img.png" alt="" width="200">
-                        <div class="details">
-                            <h5><b>Name</b></h5>
-                            <h5>Designation</h5>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repudiandae repellendus
-                            reiciendis enim nobis! Aspernatur placeat tempore in animi, aut incidunt laborum esse
-                            temporibus aliquid quo enim deleniti, atque ab?</p>
-                    </div>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="container about-work">
@@ -192,14 +195,14 @@
     <footer style="background-image: url('images/service-background.jpeg');">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="footer-spacer"></div>
                     <div class="footer-spacer"></div>
                     <div class="footer-spacer"></div>
                     <img src="images/logo/footer-logo.png" class="img-fluid"><br><br><br>
-                    <h5>ALLD Technology<br>India Private Limited</h5><br>
+                    <h5>ALLD Technology Company</h5><br>
                 </div>
-                <div class="col-md-4 office">
+                <div class="col-md-6 office col-lg-4">
                     <div class="footer-spacer"></div>
                     <h5><b>OFFICE</b></h5>
                     <hr class="hr-footer"><br><br>
@@ -207,33 +210,35 @@
                                     OFFICE</u></button>&nbsp; |
                             &nbsp;<button onclick="changeOffice('INDIA')" id='INDIA'><u>INDIA OFFICE</u></button></b>
                     </h6><br>
-                    <h6><img src="images/logo/location.png" width="30"> &nbsp;<span id="office-address">518 144th Ave
+                    <h6><img src="images/logo/location.png" width="30"> &nbsp;<span id="office-address">7518 144th Ave
                             NE Redmond, WA 98052</span></h6>
                     <br>
-                    <h6><img src="images/logo/email.png" width="30">&nbsp;&nbsp;team@alldtechnology.com</h6>
+                    <h6><img src="images/logo/email.png" width="30">&nbsp;&nbsp;admin@alldtechnology.com</h6>
                     <br>
-                    <h6><img src="images/logo/phone-call.png" width="30">&nbsp;&nbsp;<span id="office-phone">+1
-                            989-234-8892</span></h6>
+                    <!--<h6><img src="images/logo/phone-call.png" width="30">&nbsp;&nbsp;<span id="office-phone">+1
+                                989-234-8892</span></h6>-->
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="footer-spacer"></div>
                     <h5><b>QUICK LINKS</b></h5>
                     <hr class="hr-footer"><br><br>
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="/">HOME</a></li>
                         <li><a href="dataServices.html">DATA RELATED SERVICES</a></li>
                         <li><a href="cloudServices.html">CLOUD SERVICES</a></li>
-                        <li><a href="">ABOUT US</a></li>
+                        <!-- <li><a href="/">CAREERS</a></li> -->
+                        <li><a href="aboutUs.html">ABOUT US</a></li>
                         <li><a href="contactus.html">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-6 col-lg-2">
                     <div class="footer-spacer"></div>
                     <h5><b>STAY CONNECTED</b></h5>
                     <hr class="hr-footer"><br><br>
                     <ul>
                         <li><a href=""><img src="images/logo/icons8-facebook.svg"> FACEBOOK</a></li>
-                        <li><a href=""><img src="images/logo/icons8-linkedin.svg"> LINKEDIN</a></li>
+                        <li><a href="https://www.linkedin.com/company/alld-technology/mycompany/"><img
+                                    src="images/logo/icons8-linkedin.svg"> LINKEDIN</a></li>
                     </ul>
                 </div>
             </div>
@@ -242,5 +247,9 @@
     <div class="copyright">
         <p>© ALLD Technologies 2021. All Rights Reserved | Designed by ALLD Web Solutions.</p>
     </div>
-
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/vendor.js"></script>
 </body>
